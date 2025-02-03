@@ -1,0 +1,37 @@
+/* footer.module.css */
+.footer {
+    background-color: #36454F; /* Light Beige */
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #FAF3E0; /* Slate Gray */
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #FAF3E0; /* Light Beige on hover */
+  }
+  
+  .bottom {
+    margin-top: 10px;
+  }
+  
+  .bottom p {
+    font-size: 14px;
+    color: #FAF3E0; /* Slate Gray */
+  }

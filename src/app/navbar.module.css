@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    padding: 30px; /* Add some padding */
+    background-color: #36454F; /* Optional: background color */
+    border-radius: 10px;
+
+}
+
+.navList {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display list items in a row */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center items */
+}
+
+.navItem {
+    margin: 0 15px; /* Add space between items */
+    font-size: 40px; /* Increase font size */
+    color: #B2E0D6; /* Set text color (change as needed) */
+    transition: color 0.3s; /* Smooth color transition */
+   
+}
+
+
+.navItem a {
+    text-decoration: none; /* Underline hataaye */
+    color: inherit; /* Text color inherit kare parent se */
+}
+
+
+.navItem:hover {
+    color:#739089 ; 
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .navItem {
+        font-size: 16px; /* Slightly smaller font size on mobile */
+        margin: 0 10px; /* Reduce space between items */
+    }
+}

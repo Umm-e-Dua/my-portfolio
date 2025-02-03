@@ -1,0 +1,77 @@
+.herocontainer {
+  display: flex;
+  flex-direction: column; /* Stack the image and text vertically */
+  justify-content: flex-start; /* Aligns items at the start of the container */
+  align-items: center; /* Center align items */
+  margin-top: 10px; /* Space from the top */
+  height: 100vh; /* Full height of the viewport */
+  padding: 0 20px; /* Added horizontal padding for smaller devices */
+}
+
+.heroimage {
+  width: 250px; /* Default width */
+  height: 250px; /* Default height */
+  border-radius: 50%; /* Circular shape */
+  overflow: hidden; /* Ensures the image stays inside the circular shape */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  object-fit: cover; /* Fits the container without distortion */
+}
+
+.heroimage:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.skills {
+  margin-top: 20px; /* Space between image and text */
+  font-size: 1.2rem; /* Base text size */
+  color: #626a6f; /* Dark grey */
+  font-weight: 500; /* Medium font weight */
+  text-align: center; /* Centers the text */
+  line-height: 1.5; /* Better readability */
+  max-width: 100%; /* Ensure it doesn't exceed container width */
+  overflow-wrap: break-word; /* Breaks long words */
+  word-wrap: break-word; /* Compatibility with older browsers */
+  white-space: normal; /* Allows normal text wrapping */
+  font-family: serif; /* Font family */
+}
+
+.heading1 {
+  color: #333333; /* Charcoal Gray */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow */
+  font-size: 36px; /* Heading size */
+  font-weight: bold; /* Bold text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .heroimage {
+    width: 200px; /* Width for tablets */
+    height: 200px; /* Height for tablets */
+  }
+
+  .skills {
+    font-size: 1rem; /* Font size for tablets */
+    line-height: 1.4; /* Adjust line height for readability */
+  }
+
+  .heading1 {
+    font-size: 28px; /* Smaller heading size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .heroimage {
+    width: 250px; /* Width for mobile devices */
+    height: 250px; /* Height for mobile devices */
+  }
+
+  .skills {
+    font-size: 0.85rem; /* Smaller font size for mobile */
+    line-height: 1.3; /* Adjust line height for readability */
+  }
+
+  .heading1 {
+    font-size: 24px; /* Smaller heading size for mobile */
+  }
+}
